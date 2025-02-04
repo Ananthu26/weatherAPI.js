@@ -5,7 +5,7 @@
             const data = await response.json();
             console.log(data);
 
-            document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+            document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
             document.getElementById('weather-city').innerText = data.name;
             document.getElementById('weather-description').innerText = data.weather[0].description;
             document.getElementById('weather-temp').innerText = `Temperature: ${data.main.temp} °C`;
