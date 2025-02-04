@@ -1,7 +1,7 @@
 
         const getWeather = async (city) => {
             const apiKey = '3e9b6a717cf9d33ac0b1e8be45b01133';
-            const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
             const data = await response.json();
             console.log(data);
 
